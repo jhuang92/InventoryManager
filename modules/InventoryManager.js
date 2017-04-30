@@ -13,6 +13,7 @@ InventoryManager.prototype.deposit = function (name, description) {
     'date_of_deposit': new Date()
   };
   db.set(key, value).write();
+  return value;
 };
 
 InventoryManager.prototype.getItem = function (uid) {

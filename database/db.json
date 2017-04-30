@@ -18,5 +18,15 @@
     "name": "The Little Prince",
     "description": "My favorite book",
     "date_of_deposit": "2017-04-29T23:52:20.857Z"
+  },
+  "682497de5d1a8a0945d5ed38b3f8fdb0": {
+    "name": "Little Prince",
+    "description": "My favorite book",
+    "date_of_deposit": "2017-04-30T03:24:09.074Z"
+  },
+  "4d2c6214f0a6cb3ab86f68091b9abf8b": {
+    "name": "Intro to Management",
+    "description": "My least favorite book",
+    "date_of_deposit": "2017-04-30T03:25:08.565Z"
   }
 }

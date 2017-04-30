@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.15.2",
     "lowdb": "^0.16.2",
     "unique-string": "^1.0.0"
   }

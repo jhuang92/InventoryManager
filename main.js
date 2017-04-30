@@ -1,8 +1,11 @@
 "use strict";
 const Book = require('./modules/InventoryManager.js');
+var express = require('express');
+var app = express();
+const basePath = '/v1/inventory';
 
-// Book.deposit('The Little Prince', 'My favorite book');
+app.get(basePath + '/deposit', function (req, res) {
+  res.send(Book.deposit(req.query.name, req.query.description));
+})
 
-var book = Book.getItem('ad7527b43b29a5099612996ef03931bf');
-
-console.log(book);
+app.listen(3000)
