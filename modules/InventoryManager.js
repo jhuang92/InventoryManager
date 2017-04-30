@@ -16,6 +16,10 @@ InventoryManager.prototype.deposit = function (name, description) {
   return value;
 };
 
+InventoryManager.prototype.getItems = function () {
+  return db.read();
+};
+
 InventoryManager.prototype.getItem = function (uid) {
   return db.get(uid).value();
 };

@@ -8,4 +8,12 @@ app.get(basePath + '/deposit', function (req, res) {
   res.send(Book.deposit(req.query.name, req.query.description));
 })
 
+app.get(basePath + '/get_items', function (req, res) {
+  res.send(Book.getItems());
+})
+
+app.get(basePath + '/get_item/:uid', function (req, res) {
+  res.send(Book.getItem(req.params.uid));
+})
+
 app.listen(3000)
